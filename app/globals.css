@@ -1,0 +1,143 @@
+/* Prosper Fence Repair — cedar browns + forest green, sturdy workmanlike feel */
+
+:root {
+  --cedar: #7c4a21;
+  --cedar-dark: #5b3517;
+  --forest: #2f5233;
+  --forest-dark: #223d26;
+  --sand: #f5f0e8;
+  --board: #fbf8f3;
+  --ink: #2b2119;
+  --soft: #6b5d4f;
+  --hairline: #e2d9cc;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Verdana, "Segoe UI", system-ui, sans-serif;
+  background: var(--sand);
+  color: var(--ink);
+  line-height: 1.65;
+  font-size: 15px;
+}
+
+.frame { max-width: 1000px; margin: 0 auto; padding: 0 1.25rem; }
+
+h1, h2, h3 { color: var(--cedar-dark); line-height: 1.2; }
+h1 { font-size: clamp(1.7rem, 4vw, 2.5rem); margin-bottom: 0.75rem; }
+h2 { font-size: clamp(1.25rem, 3vw, 1.6rem); margin-bottom: 0.7rem; }
+h3 { font-size: 1.05rem; margin-bottom: 0.3rem; }
+p { margin-bottom: 1rem; color: var(--soft); }
+ul, ol { padding-left: 1.3rem; margin-bottom: 1rem; }
+li { margin-bottom: 0.4rem; color: var(--soft); }
+a { color: var(--forest); }
+
+/* Header */
+.top { background: var(--board); border-bottom: 3px solid var(--cedar); }
+.top-row { display: flex; justify-content: space-between; align-items: center; padding-top: 0.9rem; padding-bottom: 0.9rem; flex-wrap: wrap; gap: 0.5rem; }
+.wordmark { font-size: 1.35rem; font-weight: 700; color: var(--cedar-dark); text-decoration: none; }
+.top-phone { background: var(--forest); color: #fff; padding: 0.55rem 1.1rem; border-radius: 4px; text-decoration: none; font-weight: 700; }
+.top-phone:hover { background: var(--forest-dark); }
+.menubar { background: var(--cedar-dark); }
+.menubar ul { display: flex; gap: 0; list-style: none; padding: 0 1.25rem; flex-wrap: wrap; }
+.menubar a { display: block; color: #ead9c5; text-decoration: none; font-size: 0.85rem; padding: 0.6rem 0.9rem; }
+.menubar a:hover { background: var(--cedar); color: #fff; }
+
+/* Hero */
+.masthead { background: var(--forest-dark); padding: 3rem 0; }
+.masthead-grid { display: grid; grid-template-columns: 1.2fr 0.9fr; gap: 2.5rem; align-items: start; }
+.masthead h1 { color: #fff; }
+.masthead p { color: #cfdccf; font-size: 1.08rem; }
+.masthead-phone { display: inline-block; font-size: 1.45rem; font-weight: 700; color: #fff; background: var(--cedar); padding: 0.5rem 1.2rem; border-radius: 4px; text-decoration: none; margin: 0.5rem 0 1rem; }
+.badges { display: flex; gap: 1.25rem; flex-wrap: wrap; padding: 0; list-style: none; }
+.badges li { color: #e8efe8; font-size: 0.88rem; border: 1px solid #4a6b4e; padding: 0.35rem 0.75rem; border-radius: 4px; margin: 0; }
+
+/* Estimate form */
+.est-card { background: var(--board); border: 1px solid var(--hairline); border-radius: 6px; padding: 1.5rem; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25); }
+.est-card h2 { font-size: 1.25rem; margin-bottom: 0.2rem; }
+.est-sub { font-size: 0.85rem; }
+.est-card label { display: block; font-size: 0.8rem; font-weight: 700; color: var(--ink); margin-bottom: 0.7rem; }
+.est-card input, .est-card select {
+  width: 100%;
+  border: 1px solid #cbbfae;
+  border-radius: 4px;
+  padding: 0.55rem 0.65rem;
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+  background: #fff;
+  font-family: inherit;
+}
+.cta-btn {
+  width: 100%;
+  background: var(--forest);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+.cta-btn:hover { background: var(--forest-dark); }
+
+/* Sections */
+section { padding: 2.5rem 0; }
+.plank { background: var(--board); border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); }
+
+/* Service rows — horizontal bands, not cards */
+.svc-row { display: grid; grid-template-columns: 240px 1fr; gap: 1.5rem; padding: 1.5rem 0; border-bottom: 1px solid var(--hairline); align-items: start; }
+.svc-row:last-child { border-bottom: none; }
+.svc-row h3 a { color: var(--cedar-dark); }
+
+/* Photo placeholder */
+.pic-slot {
+  border: 2px dashed #9a6b2f;
+  background: #fdf6ec;
+  color: #7a5416;
+  border-radius: 6px;
+  min-height: 140px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.pic-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.25rem 0; }
+
+/* FAQ */
+.qa { background: var(--sand); }
+.qa-item { background: var(--board); border-left: 5px solid var(--forest); border-radius: 0 6px 6px 0; padding: 1rem 1.25rem; margin-bottom: 0.85rem; }
+.qa-item h3 { color: var(--ink); }
+.qa-item p { margin: 0; font-size: 0.95rem; }
+
+/* Areas */
+.area-list { list-style: none; padding: 0; }
+.area-list li { background: var(--board); border: 1px solid var(--hairline); border-radius: 6px; padding: 1rem 1.25rem; margin-bottom: 0.85rem; }
+.area-list h3 { color: var(--forest); }
+.area-list p { margin: 0; font-size: 0.93rem; }
+
+/* Layout helpers */
+.pair { display: grid; grid-template-columns: 1.3fr 1fr; gap: 2.25rem; align-items: start; }
+.map-pane { border: 0; width: 100%; height: 320px; border-radius: 6px; }
+
+/* CTA band */
+.rally { background: var(--cedar); text-align: center; }
+.rally h2, .rally p { color: #fff; }
+.rally a { display: inline-block; background: #fff; color: var(--cedar-dark); font-weight: 700; padding: 0.7rem 1.5rem; border-radius: 4px; text-decoration: none; }
+
+/* Footer */
+.bottom { background: var(--forest-dark); padding: 2.25rem 0; margin-top: 2rem; }
+.bottom p, .bottom li { color: #b9c9ba; font-size: 0.9rem; }
+.bottom a { color: #d9c9a8; text-decoration: none; }
+.bottom-brand { color: #fff; font-weight: 700; font-size: 1.05rem; }
+.bottom-nav { list-style: none; padding: 0; display: flex; gap: 1.1rem; flex-wrap: wrap; margin: 0.75rem 0; }
+.bottom-fine { font-size: 0.8rem; margin-top: 0.5rem; }
+
+@media (max-width: 840px) {
+  .masthead-grid, .pair, .pic-row { grid-template-columns: 1fr; }
+  .svc-row { grid-template-columns: 1fr; }
+}
