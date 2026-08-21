@@ -42,7 +42,7 @@ export function Footer() {
           ))}
         </ul>
         <p className="bottom-fine">
-          © {new Date().getFullYear()} {SITE.name} · Serving Prosper, TX —
+          © {new Date().getFullYear()} {SITE.name} · Serving Prosper, TX:
           Whitley Place, Tanners Mill, Whispering Farms, Windsong Ranch, Star
           Trail, and every fence line in between.
         </p>
@@ -81,23 +81,13 @@ export function Faq({ items, heading = "Fence Questions, Answered" }) {
   );
 }
 
-/** Loud placeholder for a real local photo. */
-export function Pic({ note }) {
-  return (
-    <div className="pic-slot" role="img" aria-label={`Photo placeholder: ${note}`}>
-      <strong>[ PHOTO PLACEHOLDER ]</strong>
-      <span>{note}</span>
-    </div>
-  );
-}
-
 /** Estimate form — posts to SITE.formEndpoint (wire before launch). */
 export function EstimateForm({ heading = "Free Repair Estimate" }) {
   return (
     <div className="est-card">
       <h2>{heading}</h2>
       <p className="est-sub">
-        Describe the damage — photos help. We reply the same business day.
+        Describe the damage. Photos help. We reply the same business day.
       </p>
       <form action={SITE.formEndpoint} method="POST">
         <label>

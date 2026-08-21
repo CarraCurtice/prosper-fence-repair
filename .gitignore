@@ -5,3 +5,8 @@ out/
 .env*
 
 .vercel
+
+# Original full-size photos (web copies live in public/images/)
+/*.jpg
+/*.jpeg
+/*.png

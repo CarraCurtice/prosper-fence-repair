@@ -2,9 +2,9 @@ import { SITE } from "../../lib/config";
 import { EstimateForm, Faq } from "../../components/blocks";
 
 export const metadata = {
-  title: "Contact Prosper Fence Repair — Free Estimates",
+  title: "Contact Prosper Fence Repair: Free Estimates",
   description:
-    "Get a free fence repair estimate in Prosper, TX. Call or send the form with photos of the damage — we reply the same business day.",
+    "Get a free fence repair estimate in Prosper, TX. Call or send the form with photos of the damage. We reply the same business day.",
   alternates: { canonical: "/contact/" },
 };
 
@@ -15,7 +15,7 @@ const faqItems = [
   },
   {
     q: "Do you charge to come look?",
-    a: "No — estimates are free, whether we price from photos or come walk the fence line.",
+    a: "No. Estimates are free, whether we price from photos or come walk the fence line.",
   },
   {
     q: "How soon can the work happen?",
@@ -37,7 +37,7 @@ export default function Contact() {
             </p>
             <p>{SITE.hours}</p>
             <p>
-              Service area: all of Prosper, TX — Whitley Place, Tanners Mill,
+              Service area: all of Prosper, TX, including Whitley Place, Tanners Mill,
               Whispering Farms, Windsong Ranch, Star Trail, Legacy Gardens,
               Lakes of La Cima, and downtown.
             </p>

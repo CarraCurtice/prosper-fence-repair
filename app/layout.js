@@ -6,11 +6,11 @@ import { SITE } from "../lib/config";
 export const metadata = {
   metadataBase: new URL(SITE.domain),
   title: {
-    default: `${SITE.name} — Fence Repair in Prosper, TX`,
+    default: `${SITE.name} | Fence Repair in Prosper, TX`,
     template: `%s | ${SITE.name}`,
   },
   description:
-    "Wood fence repair, gate repair, and fence staining in Prosper, TX. Leaning posts, storm damage, sagging gates — fixed fast by a local crew.",
+    "Wood fence repair, gate repair, and fence staining in Prosper, TX. Leaning posts, storm damage, sagging gates, fixed fast by a local crew.",
   openGraph: { siteName: SITE.name, locale: "en_US", type: "website" },
 };
 

@@ -11,11 +11,11 @@ export const metadata = {
 const areas = [
   {
     name: "Whitley Place",
-    note: "Built 2008–2017, which makes its original cedar fences some of the oldest in town — prime years for post failure and full-section repairs. The wooded Wilson Creek lots also mean falling-limb damage after storms.",
+    note: "Built 2008–2017, which makes its original cedar fences some of the oldest in town, prime years for post failure and full-section repairs. The wooded Wilson Creek lots also mean falling-limb damage after storms.",
   },
   {
     name: "Tanners Mill",
-    note: "Bigger lots, longer fence runs, more gates. Repair jobs here often bundle several issues discovered on the walk-around — we quote the whole line so there are no surprises.",
+    note: "Bigger lots, longer fence runs, more gates. Repair jobs here often bundle several issues discovered on the walk-around. We quote the whole line so there are no surprises.",
   },
   {
     name: "Whispering Farms",
@@ -23,7 +23,7 @@ const areas = [
   },
   {
     name: "Windsong Ranch",
-    note: "West Prosper's big master-planned community. Fences on the outer phases back onto open land and catch the full south wind — the classic Prosper lean shows up early on those runs.",
+    note: "West Prosper's big master-planned community. Fences on the outer phases back onto open land and catch the full south wind. The classic Prosper lean shows up early on those runs.",
   },
   {
     name: "Star Trail",
@@ -35,18 +35,18 @@ const areas = [
   },
   {
     name: "Downtown Prosper",
-    note: "The established blocks off Broadway have the most varied fencing in town — older pickets, chain link conversions, custom runs. Every job starts with a look, not an assumption.",
+    note: "The established blocks off Broadway have the most varied fencing in town: older pickets, chain link conversions, custom runs. Every job starts with a look, not an assumption.",
   },
 ];
 
 const faqItems = [
   {
     q: "Do you cover every neighborhood in Prosper?",
-    a: "Yes — town limits and the edges, both counties. The list above is where the trucks are most weeks, not a boundary.",
+    a: "Yes. Town limits and the edges, both counties. The list above is where the trucks are most weeks, not a boundary.",
   },
   {
     q: "What about addresses just outside Prosper?",
-    a: "Fence lines don't respect city limits — if you're on the Celina or Frisco edge of town, call. If the schedule allows, we'll take it.",
+    a: "Fence lines don't respect city limits. If you're on the Celina or Frisco edge of town, call. If the schedule allows, we'll take it.",
   },
 ];
 
@@ -88,7 +88,7 @@ export default function ServiceAreas() {
               with the address. Build year tells us the likely footing spec.
               Position in town tells us the wind exposure. The HOA tells us
               the style and stain rules. By the time we knock on your door,
-              we usually know what we&rsquo;re going to find — which is why
+              we usually know what we&rsquo;re going to find, which is why
               estimates are fast and firm.
             </p>
           </div>
